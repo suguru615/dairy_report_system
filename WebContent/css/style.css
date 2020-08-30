@@ -11,6 +11,24 @@ body {
     background-color: #333333;
 }
 
+#header_kanrisya {
+    width: 100%;
+    height: 70px;
+    background-color: #0432ff;
+}
+
+#header_butyou {
+    width: 100%;
+    height: 70px;
+    background-color: #aa7941;
+}
+
+#header_katyou {
+    width: 100%;
+    height: 70px;
+    background-color: #00fcff;
+}
+
 #content {
     width: 94%;
     margin-top: 15px;

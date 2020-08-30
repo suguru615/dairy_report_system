@@ -10,7 +10,18 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="header">
+            <c:if test="${sessionScope.login_employee.admin_flag == 0}">
+  <div id="header">
+</c:if>
+<c:if test="${sessionScope.login_employee.admin_flag == 1}">
+  <div id="header_kanrisya">
+</c:if>
+<c:if test="${sessionScope.login_employee.admin_flag == 2}">
+  <div id="header_butyou">
+</c:if>
+<c:if test="${sessionScope.login_employee.admin_flag == 3}">
+  <div id="header_katyou">
+</c:if>
                 <div id="header_menu">
                     <h1><a href="<c:url value='/' />">日報管理システム</a></h1>&nbsp;&nbsp;&nbsp;
                     <c:if test="${sessionScope.login_employee != null}">
